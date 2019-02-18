@@ -1,0 +1,432 @@
+header{
+    &.header{
+        #toggle-action{
+            display: none;
+            visibility: hidden;
+            &:checked {
+                ~ .sale-off-notice{
+                    margin-top: 0px;
+                }
+                ~ .toggle-open{
+                    display: none;
+                }
+            }
+        }
+        .toggle-open{
+            background: $color_light_grey;
+            color: $color_black;
+            font-weight: 300;
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            display: block;
+            height: 26px;
+            width: 26px;
+            text-align: center;
+        }
+        .sale-off-notice{
+            font-size: 11px;
+            background: $color_light_grey;
+            text-align: center;
+            height: 50px;
+            margin-top: -50px;
+            transition: margin-top 0.5s;
+            .container{
+                position: relative;
+                p{
+                    line-height: 50px;
+                    margin: 0;
+                    span{
+                        margin-right: 5px;
+                        .icon-arrow{
+                            font-size: 9px;
+                            margin-right: 0;
+                            margin-left: 3px;
+                        }
+                    }
+                    a.view-detail{
+                        color: $color_black;
+                        text-decoration: underline;
+                        margin-left: 10px;
+                    }
+                }
+                .toogle-cancel{
+                    position: absolute;
+                    right: 15px;
+                    top: 18px;
+                    color: $color_black;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+        .option-list{
+            .app{
+                ul{
+                    li{
+                        a{
+                            padding: 20px 5px;
+                            .icon-social-apple,
+                            .icon-social-android{
+                                font-size: 25px;
+                                color: $color_gray;
+                                
+                            }
+                            &:hover{
+                                background: transparent;
+                                span{
+                                    color: $color_black
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logo{
+                padding: 20px 0;
+                h1{
+                    margin: 0;
+                    line-height: 0
+                }
+            }
+            .noti{
+                padding: 0;
+                ul{
+                    li{
+                        &.user{
+                            .icon-arrow-down{
+                                font-size: $font_size_11;
+                            }
+                            span{
+                                font-size: $font_size_12
+                            }
+                            a{
+                                padding-right: 0;
+                            }
+                        }
+                        a{
+                            padding: 20px 10px;
+                            color: $color_black;
+                            .icon-search,
+                            .icon-reminders,
+                            .icon-cart,
+                            .icon-arrow-down{
+                                font-size: 18px;
+                                color: $color_black
+                            }
+                            &:hover,
+                            &:active,
+                            &:focus{
+                                background: transparent;
+                                span{
+                                    color: $color_gray
+                                }
+                            }
+                            .icon-reminders{
+                                position: relative;
+                                .point{
+                                    background: $color_red;
+                                    width: 3px;
+                                    height: 3px;
+                                    border-radius: 1.5px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                }
+                            }
+                            .icon-cart{
+                                .count{
+                                    font-size: $font_size_12;
+                                    position: relative;
+                                    bottom: 2px;
+                                    left: -2px;
+                                }
+                            }
+                        }
+                        &:before{
+                            content: '|';
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            color: $color_light_grey;
+                        }
+                        &.search-li:before{
+                            content: ' ';
+                        }
+                    }
+                }
+            }
+        }
+        nav{
+            min-height: auto;
+            text-align: center;
+            margin: 0;
+            ul#nav-menu {
+                display: inline-block;
+                    > li {
+                        padding: 0 20px;
+                        a{
+                            font-family: Lato-semiBold;
+                            font-size: $font_size_13;
+                            color: #000;
+                            padding: 0px;
+                            padding-bottom: 10px;
+                            line-height: 12px;
+
+                        }
+                        &.active,
+                        &:hover{
+                            a{
+                                background: transparent;
+                                border-bottom: 5px solid #000;
+                                color: #000;
+                                border-radius: 0;
+                            }
+                        }
+                        &.sell:before{
+                            content: '|';
+                            position: absolute;
+                            top: -5px;
+                            left: 0;
+                            color: $color_light_grey;
+
+                        }
+                    }
+                }
+            }
+        }
+}
+// display on tablet
+@media only screen and (max-width: 991px) {
+    header{
+        &.header{
+            nav{
+                ul#nav-menu {
+                        > li {
+                            padding: 0 10px !important;
+                        }
+                    }
+                }
+        }
+    }
+}
+// display on mobile 
+@media only screen and (max-width: 767px) {
+    header{
+        &.header{
+            .sale-off-notice{
+                // padding: 1px 15px;
+                padding-right: 20px;
+                .container{
+                    p{
+                        line-height: 24px;
+                        span{
+                            .icon-arrow{
+                
+                            }
+                        }
+                        a.view-detail{
+                            
+                        }
+                    }
+                    .toogle-cancel{
+                        right: -15px;
+                        top: 5px;
+                    }
+                }
+            }
+            .container{
+                padding: 0;
+                .option-list{
+                    border-bottom: 1px solid $color_gray;
+                    .app{
+                        padding: 20px;
+                        // border-right: 1px solid $color_gray;
+                        .box-toggle-menu{
+                            text-align: center;
+                            label{
+                                margin: 0;
+                            }
+                        }
+                        ul{
+                            li{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .logo{
+                        padding: 21px;
+                        h1{
+                            margin: 0;
+                            line-height: 0;
+                            text-align: right;
+                            img{
+                                width: 130px;
+                            }
+                        }
+                    }
+                    .noti{
+                        ul{
+                            float: none !important;
+                            li{
+                                display: inline-block;
+                                &.user{
+                                    .icon-arrow-down{
+                                        font-size: 11px
+                                    }
+                                }
+                                a{
+                                    padding: 20px 10px;
+                                    color: $color_black;
+                                    .icon-search,
+                                    .icon-reminders,
+                                    .icon-cart,
+                                    .icon-arrow-down{
+                                        font-size: 18px;
+                                        color: $color_black
+                                    }
+                                    &:hover,
+                                    &:active,
+                                    &:focus{
+                                        background: transparent;
+                                        span{
+                                            color: $color_gray
+                                        }
+                                    }
+                                    .icon-reminders{
+                                        position: relative;
+                                        .point{
+                                            background: $color_red;
+                                            width: 3px;
+                                            height: 3px;
+                                            border-radius: 1.5px;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                        }
+                                    }
+                                    .icon-cart{
+                                        .count{
+                                            font-size: $font_size_12;
+                                            position: relative;
+                                            bottom: 2px;
+                                            left: -2px;
+                                        }
+                                    }
+                                }
+                                &:before{
+                                    border: 1px solid red;
+                                }
+                            }
+                        }
+                    }
+                }
+                nav{
+                    position: fixed;
+                    background: #fff;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    margin-left: -300px;
+                    transition: margin-left 0.5s;;
+                    z-index:999;
+                    width: 300px;
+                    ul.mobile{
+                        float: none !important;
+                        background: $color_light_grey;
+                        margin: 0;
+                        padding: 10px;
+                        li{
+                            display: inline;
+                            a{
+                                display: inline;
+                                span{
+                                    font-size: $font_size_11;
+                                }
+                                span.icon-social-apple,
+                                span.icon-social-android{
+                                    font-size: $font_size_22
+                                }
+                                color: $color_black;
+                            }
+                        }
+                    }
+                    #nav-menu{
+                        display: block !important;
+                            li{
+                                display: block;
+                                float: none;
+                                padding: 0 !important;
+                                a{
+                                    padding: 10px !important;
+                                    border-radius: 0;
+                                    font-weight: 300 !important;
+                                }
+                                &.active{
+                                    a{
+                                        border: none !important;
+                                        background: $color_black !important;
+                                        color: $color_white !important;
+                                        &:hover,
+                                        &:active{
+                                            border: none !important;
+                                            background: $color_black !important;
+                                            color: $color_white !important;
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                    ul#nav-menu {
+                        display: inline-block;
+                            > li {
+                                padding: 0 20px;
+                                a{
+                                    font-family: Lato-semiBold;
+                                    font-size: 16;
+                                    color: #000;
+                                    padding: 0px;
+                                    padding-bottom: 10px;
+                                    line-height: 12px;
+        
+                                }
+                                &.active,
+                                &:hover{
+                                    a{
+                                        background: transparent;
+                                        border-bottom: 5px solid #000;
+                                        color: #000;
+                                        border-radius: 0;
+                                    }
+                                }
+                                &.sell:before{
+                                    content: ' ';
+                                }
+                            }
+                        }
+                    }
+                }
+                .toggle-menu-close{
+                    position: absolute;
+                    top: 0;
+                    left: 300px;
+                    width: 30px;
+                    height: 30px;
+                    background: $color_gray;
+                    color: $color_white;
+                    text-align: center;
+                    line-height: 30px;
+                    margin: 0;
+                    display: none;
+                }
+                #toggle-menu:checked ~ nav {
+                    margin-left: 0px;
+                }
+                #toggle-menu:checked ~ .toggle-menu-close {
+                    display: block;
+                }
+            }
+    }
+}

@@ -1,0 +1,57 @@
+.upcoming-events{
+    .container{
+        .upcoming-events-list{
+            margin-right: -15px;
+            margin-left: -15px;
+            .item{
+                margin-bottom: 20px;
+                .wrap-item{
+                    border: 1px solid $color_gray;
+                    border-right: none;
+                    border-left: none;
+                    .thumb{
+                        width: 90px;
+                        height: 100px;
+                        position: relative;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: none;
+                        }
+                    }
+                    .info{
+                        height: 100px;
+                        padding: 15px;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -ms-flex-line-pack: center;
+                        align-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        .title{
+                            font-size: $font_size_12;
+                            -ms-flex: 1;
+                            flex: 1;
+                            text-transform: uppercase;
+                        }
+                        .time{
+                            font-size: $font_size_11;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .upcoming-events{
+        .container{
+            .upcoming-events-list{
+                padding: 0;
+            }
+        }
+    }
+}

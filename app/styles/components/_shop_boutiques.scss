@@ -1,0 +1,106 @@
+.shop-boutiques{
+    margin-top: 60px;
+    min-height: 340px;
+    .container{
+        border: 1px solid $color_gray;
+        .produce-box{
+            height: 340px;
+            padding: 0;
+            background: url(./../images/shop_boutiques/bg_shop.jpg);
+            background-size: cover;
+            text-align: center;
+            position: relative;
+            .title-box{
+                margin: 0;
+                padding: 10px;
+                label{
+                    background: $color_black;
+                    display: inline;
+                    color: $color_white;
+                    padding: 10px 25px;
+                    font-weight: 300;
+                }
+            }
+            .info-box{
+                background: $color_white;
+                width: 300px;
+                height: 110px;
+                padding: 20px; 
+                margin: auto;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                h4{
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-size: $font_size_16;
+                }
+                p{
+                    font-size: $font_size_13;
+                }
+                a{
+                    font-size: $font_size_16;
+                    color: $color_black;
+                    text-decoration: underline
+                }
+            }
+        }
+        .product-box{
+            height: 340px;
+            .item{
+                text-align: center;
+                height: 340px;
+                .thumb{
+                    height: 200px;
+                    margin-bottom: 20px;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        object-fit: contain
+                    }
+                }
+                .info{
+                    p{
+                        margin-bottom: 3px;
+                    }
+                    .pro-status{
+                        height: 10px;
+                        line-height: 10px;
+                        color: $color_yellow;
+                        font-size: $font_size_8;
+                        text-transform: uppercase;
+                    }
+                    .pro-name{
+                        font-size: $font_size_12;
+                        text-transform: uppercase
+                    }
+                    .pro-type{
+                        font-size: $font_size_12;
+                        text-transform: capitalize
+                    }
+                    .pro-current-price{
+                        font-size: $font_size_12;
+                        text-transform: uppercase;
+                        &.has-sale{
+                            color: $color_red;
+                        }
+                    }
+                    .pro-real-price{
+                        font-size: $font_size_10;
+                        text-transform: uppercase;
+                        text-decoration: line-through;
+                        color: $color_dark_gray;
+                        margin-bottom: 10px;
+                    }
+                    .pro-seller{
+                        font-size: $font_size_10;
+                        span{
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

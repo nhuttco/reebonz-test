@@ -1,0 +1,43 @@
+// Colors
+$color-white: #fff;
+$color-light-white: rgba(255, 255, 255, 0.82);
+$color-black: #000;
+$color-yellow: #a06f2a;
+$color-light-grey: #efeeef;
+$color-gray: #cbcbcb;
+$color-red: #ef3c39;
+$color-light-gray: rgba(0, 0, 0, 0.08);
+$color-dark-gray: #bdbbbd;
+$color-gold: #956b29;
+$color-blur: rgba(0, 0, 0, 0.3);
+
+@include font-face('Lato', '../fonts/lato_font/lato-regular');
+@include font-face('Lato-heavy', '../fonts/lato_font/lato-heavy');
+@include font-face('Lato-black', '../fonts/lato_font/lato-black-webfont');
+@include font-face('Lato-bold', '../fonts/lato_font/lato-bold-webfont');
+@include font-face('Lato-semiBold', '../fonts/lato_font/lato-semibold-webfont');
+@include font-face('Lato-itatic', '../fonts/lato_font/lato-regular');
+@include font-face('Lato-light', '../fonts/lato_font/lato-light');
+@include font-face('icon', '../fonts/icon/icon');
+
+//Fonts Family
+$font-regular: 'Lato';
+$font-heavy: 'Lato-heavy';
+$font-black: 'Lato-black';
+$font-bold: 'Lato-bold';
+$font-semiBold: 'Lato-semiBold';
+$font-medium: 'Lato-medium';
+$font-light: 'Lato-light';
+$font-icon: 'icons';
+
+//Fonts size
+$font-size-22: 22px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-14: 14px;
+$font-size-13: 13px;
+$font-size-12: 12px;
+$font-size-11: 11px;
+$font-size-10: 10px;
+$font_size_8: 8px;
+

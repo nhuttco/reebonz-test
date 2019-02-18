@@ -1,0 +1,35 @@
+.brand-focus{
+    .item-list{
+        &.brand-list{
+            padding: 0 15px;
+            .item{
+                padding: 0;
+                border: 1px solid $color_gray;
+                .thumb{
+                    width: 90px;
+                    height: 100px;
+                    position: relative;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: none;
+                    }
+                }
+                .info{
+                    height: 100px;
+                    padding-left: 15px;
+                    display: flex;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -ms-flex-line-pack: center;
+                    align-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    p{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

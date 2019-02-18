@@ -1,0 +1,46 @@
+$icon-path: '../fonts/icon';
+// endbower
+@import 'mixins';
+@import 'variables';
+@import 'icons';
+@import './components/component';
+
+body{
+  font-family: "Lato";
+  section{
+    .header-section{
+      margin-top: 30px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .header-section-border{
+      font-size: 18px;
+      text-align: center;
+      margin-top: 55px;
+      margin-bottom: 45px;
+      p{
+        border-bottom: 5px solid $color_black;
+        display: inline-block;
+        margin: 0;
+      }
+      
+    }
+  }
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body{
+    .mobile{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+  }
+}

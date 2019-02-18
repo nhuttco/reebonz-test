@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+[data-icon]:before {
+  font-family: $font-icon !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'icon' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: '\64';
+}
+
+.icon-arrow-down:before {
+  content: '\65';
+}
+
+.icon-arrow-left:before {
+  content: '\66';
+}
+
+.icon-arrow-right:before {
+  content: '\67';
+}
+
+.icon-social-android:before {
+  content: '\61';
+}
+
+.icon-social-apple:before {
+  content: '\62';
+}
+
+.icon-facebook-square:before {
+  content: '\68';
+}
+
+.icon-instagram:before {
+  content: '\69';
+}
+
+.icon-twitter-square:before {
+  content: '\6a';
+}
+
+.icon-pinterest-square:before {
+  content: '\6b';
+}
+
+.icon-search:before {
+  content: '\6c';
+}
+
+.icon-close:before {
+  content: '\6d';
+}
+
+.icon-cart:before {
+  content: '\6e';
+}
+
+.icon-global:before {
+  content: '\6f';
+}
+
+.icon-reminders:before {
+  content: '\70';
+}

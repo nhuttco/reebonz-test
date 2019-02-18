@@ -1,0 +1,35 @@
+.hero-banner{
+    border-top: 10px solid $color_black;
+    .swiper-container{
+        max-height: 500px;
+        .swiper-wrapper{
+            .swiper-slide{
+                position: relative;
+                .img-responsive{
+                    width: 100% !important;
+                    height: 500px;
+                    object-fit: cover;
+                }
+                .caption{
+                    width: 100%;
+                    position: absolute;
+                    top: 20%;
+                    .title{
+                        font-size: $font_size_22;
+                    }
+                    .description{
+                        font-size: $font_size_16;
+                        width: 235px;
+                    }
+                    .link{
+                        text-decoration: underline;
+                        margin-top: 20px;
+                        a{
+                            color: $color_black
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

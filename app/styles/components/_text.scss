@@ -1,0 +1,12 @@
+.text-red{
+    color: $color_red !important;
+}
+.text-bold {
+    font-family: $font-bold !important;
+}
+.label-red{
+    background: $color_red;
+    color: $color_white;
+    @include border-radius(4px);
+    padding: 2px;
+}

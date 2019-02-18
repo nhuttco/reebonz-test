@@ -1,0 +1,719 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>reebonz</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css" type="text/css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+
+    
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <header class="header">
+        <input id="toggle-action" type="checkbox" checked/>
+        <label class="toggle-open" for='toggle-action' title="show sale off">
+          <span class="icon-arrow-down"></span>
+        </label>
+        <div class="sale-off-notice">
+            <div class="container">
+                <p>
+                  <span class="text-bold">SUMMER SALE</span>
+                  <span>|</span> 
+                  <span><strong class="text-red text-bold">EXTRA 20% OFF</strong> YOUR ORDER.</span> 
+                  <span>CODE: <strong class="text-bold">EXTRA20</strong></span>
+                  <span>SHOP WOMEN <span class="icon-arrow"></span></span> 
+                  <span>SHOP MEN <span class="icon-arrow"></span></span>
+                  <a class="view-detail" href="#">VIEW DETAILS</a>
+                </p>
+                <label for="toggle-action" class="toogle-cancel">
+                  <span class="icon-close"></span>
+                </label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="option-list">
+              <div class="col-md-4 col-sm-4 col-xs-2 app">
+                <div class="mobile box-toggle-menu">
+                    <label for="toggle-menu">
+                      <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <ul class="desktop nav navbar-nav nav-left">
+                  <li>
+                      <a href="">
+                        <span class="icon-social-apple"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                        <span class="icon-social-android"></span>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-10 logo text-center">
+                <h1>
+                  <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                  </a>
+                </h1>
+              </div>
+              <div class="col-md-4 col-sm-4 noti desktop">
+                  <ul class="nav navbar-nav pull-right">
+                    <li class="search-li">
+                        <a href="#">
+                          <span class="icon-search"></span>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon-reminders">
+                            <span class="point"></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon-cart">
+                          <span class="count">2</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="user">
+                      <a href="#">
+                        <span>mae</span>
+                        <span class="icon-arrow-down"></span>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <input id="toggle-menu" type="checkbox" hidden>
+            <label class="toggle-menu-close mobile" for='toggle-menu'>
+                <span class="icon-close"></span>
+              </label>
+            <nav class="nav navbar">
+                <ul class="mobile nav navbar-nav">
+                    <li>
+                        <a href="">
+                          <span class="icon-social-apple"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="icon-social-android"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile nav navbar-nav pull-right">
+                    <li>
+                        <a href="#">
+                          <span class="icon-search"></span>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon-reminders">
+                            <span class="point"></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon-cart">
+                          <span class="count">2</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="user">
+                      <a href="#">
+                        mae
+                        <span class="icon-arrow-down"></span>
+                      </a>
+                    </li>
+                </ul>
+                <ul id="nav-menu" class="nav nav-pills">
+                    <li class="active"><a href="#women" data-toggle="pill" role="tab" aria-controls="pills-women" aria-selected="true">WOMEN</a></li>
+                    <li><a href="#men" data-toggle="pill" role="tab" aria-controls="pills-men" aria-selected="true">MEN</a></li>
+                    <li><a href="#categories" data-toggle="pill" role="tab" aria-controls="pills-categories" aria-selected="true">CATEGORIES</a></li>
+                    <li><a href="#designer" data-toggle="pill" role="tab" aria-controls="pills-designer" aria-selected="true">DESIGNER</a></li>
+                    <li><a href="#events" data-toggle="pill" role="tab" aria-controls="pills-events" aria-selected="true">EVENTS</a></li>
+                    <li><a href="#outlet" data-toggle="pill" role="tab" aria-controls="pills-outlet" aria-selected="true" class="text-red">OUTLET</a></li>
+                    <li><a href="#sale" data-toggle="pill" role="tab" aria-controls="pills-sale" aria-selected="true" class="text-red">SALE</a></li>
+                    <li class="sell"><a href="#sell" data-toggle="pill" role="tab" aria-controls="pills-sell" aria-selected="true">SELL</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+      </header>
+      <section class="hero-banner">
+        <div class="swiper-container hero-banner-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/hero_banner/hero-banner-1.jpg" class="img-responsive" alt="Responsive image">
+                    <div class="caption">
+                      <div class="container">
+                          <h1 class="text-bold title">STYLISH BAGS</h1>
+                          <p class="description">Make your wardrobe essentials a fashion statement.</p>
+                          <p class="link"><a href="#">Shop Now</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/hero_banner/hero-banner-2.jpg" class="img-responsive" alt="Responsive image">
+                    <div class="caption">
+                        <div class="container">
+                            <h1 class="txt-bold title">STYLISH BAGS</h1>
+                            <p class="description">Make your wardrobe essentials a fashion statement.</p>
+                            <p class="link"><a href="#">Shop Now</a></p>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/hero_banner/hero-banner-3.jpg" class="img-responsive" alt="Responsive image">
+                    <div class="caption">
+                        <div class="container">
+                            <h1 class="txt-bold title">STYLISH BAGS</h1>
+                            <p class="description">Make your wardrobe essentials a fashion statement.</p>
+                            <p class="link"><a href="#">Shop Now</a></p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="brand-focus">
+        <div class="container">
+          <h2 class="header-section text-bold">BRAND FOCUS</h2>
+          <div class="item-list brand-list">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12 item">
+                <div class="thumb pull-left">
+                  <img src="images/brand_focus/brand-focus-1.jpg" alt="brand-focus">
+                </div>
+                <div class="info pull-left">
+                    <p>CHAUMET_SS16</p>
+                    <p>LIENS COLLECTION</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 item">
+                  <div class="thumb pull-left">
+                      <img src="images/brand_focus/brand-focus-2.jpg" alt="brand-focus">
+                  </div>
+                  <div class="info pull-left">
+                      <p>CHAUMET_SS16</p>
+                      <p>LIENS COLLECTION</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 item">
+                  <div class="thumb pull-left">
+                      <img src="images/brand_focus/brand-focus-3.jpg" alt="brand-focus">
+                  </div>
+                  <div class="info pull-left">
+                      <p>CHAUMET_SS16</p>
+                      <p>LIENS COLLECTION</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-events">
+          <div class="container">
+              <h2 class="header-section text-bold fs16">NEW EVENTS</h2>
+              <div class="row item-list event-list"></div>
+            </div>
+      </section>
+      <section class="trending">
+          <div class="container">
+              <h2 class="text-medium header-section-border">
+                <p> WHAT'S TREDING</p>
+              </h2>
+              <div class="swiper-container trend-list-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="thumb">
+                      <img src="images/trending/trend_1.jpg" alt="thumbnail">
+                    </div>
+                    <div class="info">
+                        <p class="pro-status text-bold"></p>
+                        <p class="pro-name text-bold">normal kamali</p>
+                        <p class="pro-type">Swimsuit</p>
+                        <p class="pro-current-price">
+                          SGD 5,688
+                        </p>
+                        <p class="pro-real-price text-line-through"></p>
+                        <p class="pro-seller"><span>By </span>Reebonz outlet</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="thumb">
+                        <img src="images/trending/trend_2.jpg" alt="thumbnail">
+                    </div>
+                    <div class="info">
+                        <p class="pro-status text-bold">PRE-OWNED</p>
+                        <p class="pro-name text-bold">acne studios</p>
+                        <p class="pro-type">Black Slippers</p>
+                        <p class="pro-current-price">
+                          SGD 5,688
+                        </p>
+                        <p class="pro-real-price text-line-through">SGD 5,688</p>
+                        <p class="pro-seller"><span>By </span>REEBONZ</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="thumb">
+                        <img src="images/trending/trend_3.jpg" alt="thumbnail">
+                    </div>
+                    <div class="info">
+                        <p class="pro-status text-bold"></p>
+                        <p class="pro-name text-bold">Madewell</p>
+                        <p class="pro-type">Printed Dress</p>
+                        <p class="pro-current-price has-sale">
+                            SGD 5,688
+                          <span class="label-red">-60%</span>
+                        </p>
+                        <p class="pro-real-price text-line-through">SGD 5,688</p>
+                        <p class="pro-seller"><span>By </span>Club Venit</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="thumb">
+                      <img src="images/trending/trend_4.jpg" alt="thumbnail">
+                    </div>
+                    <div class="info">
+                        <p class="pro-status text-bold">PRE-OWNED</p>
+                        <p class="pro-name text-bold">Eberjey</p>
+                        <p class="pro-type">Nightwear</p>
+                        <p class="pro-current-price">
+                            SGD 5,688
+                        </p>
+                        <p class="pro-real-price text-line-through">SGD 5,688</p>
+                        <p class="pro-seller"><span>By </span>REEBONZ</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="thumb">
+                      <img src="images/trending/trend_5.jpg" alt="thumbnail">
+                    </div>
+                    <div class="info">
+                        <p class="pro-status text-bold">PRE-OWNED</p>
+                        <p class="pro-name text-bold">Miu Miu</p>
+                        <p class="pro-type">Sandals</p>
+                        <p class="pro-current-price">
+                            SGD 5,688
+                        </p>
+                        <p class="pro-real-price text-line-through">SGD 5,688</p>
+                        <p class="pro-seller"><span>By </span>REEBONZ</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="thumb">
+                        <img src="images/trending/trend_6.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                        <p class="pro-status text-bold">PRE-OWNED</p>
+                        <p class="pro-name text-bold">ancient greek</p>
+                        <p class="pro-type">Sandals</p>
+                        <p class="pro-current-price has-sale">
+                            SGD 5,688
+                          <span class="label-red">-60%</span>
+                        </p>
+                        <p class="pro-real-price text-line-through">SGD 5,688</p>
+                        <p class="pro-seller"><span>By </span>Club Venit</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="thumb">
+                        <img src="images/trending/trend_1.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                          <p class="pro-status text-bold"></p>
+                          <p class="pro-name text-bold">normal kamali</p>
+                          <p class="pro-type">Swimsuit</p>
+                          <p class="pro-current-price">
+                            SGD 5,688
+                          </p>
+                          <p class="pro-real-price text-line-through"></p>
+                          <p class="pro-seller"><span>By </span>Reebonz outlet</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                          <img src="images/trending/trend_2.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                          <p class="pro-status text-bold">PRE-OWNED</p>
+                          <p class="pro-name text-bold">acne studios</p>
+                          <p class="pro-type">Black Slippers</p>
+                          <p class="pro-current-price">
+                            SGD 5,688
+                          </p>
+                          <p class="pro-real-price text-line-through">SGD 5,688</p>
+                          <p class="pro-seller"><span>By </span>REEBONZ</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                          <img src="images/trending/trend_3.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                          <p class="pro-status text-bold"></p>
+                          <p class="pro-name text-bold">Madewell</p>
+                          <p class="pro-type">Printed Dress</p>
+                          <p class="pro-current-price has-sale">
+                              SGD 5,688
+                            <span class="label-red">-60%</span>
+                          </p>
+                          <p class="pro-real-price text-line-through">SGD 5,688</p>
+                          <p class="pro-seller"><span>By </span>Club Venit</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img src="images/trending/trend_4.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                          <p class="pro-status text-bold">PRE-OWNED</p>
+                          <p class="pro-name text-bold">Eberjey</p>
+                          <p class="pro-type">Nightwear</p>
+                          <p class="pro-current-price">
+                              SGD 5,688
+                          </p>
+                          <p class="pro-real-price text-line-through">SGD 5,688</p>
+                          <p class="pro-seller"><span>By </span>REEBONZ</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img src="images/trending/trend_5.jpg" alt="thumbnail">
+                      </div>
+                      <div class="info">
+                          <p class="pro-status text-bold">PRE-OWNED</p>
+                          <p class="pro-name text-bold">Miu Miu</p>
+                          <p class="pro-type">Sandals</p>
+                          <p class="pro-current-price">
+                              SGD 5,688
+                          </p>
+                          <p class="pro-real-price text-line-through">SGD 5,688</p>
+                          <p class="pro-seller"><span>By </span>REEBONZ</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb">
+                          <img src="images/trending/trend_6.jpg" alt="thumbnail">
+                        </div>
+                        <div class="info">
+                          <p class="pro-status text-bold">PRE-OWNED</p>
+                          <p class="pro-name text-bold">ancient greek</p>
+                          <p class="pro-type">Sandals</p>
+                          <p class="pro-current-price has-sale">
+                              SGD 5,688
+                            <span class="label-red">-60%</span>
+                          </p>
+                          <p class="pro-real-price text-line-through">SGD 5,688</p>
+                          <p class="pro-seller"><span>By </span>Club Venit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <span class="icon-arrow-right"></span>
+                </div>
+                <div class="swiper-button-prev">
+                    <span class="icon-arrow-left"></span>
+                </div>
+              </div>
+          </div>
+      </section>
+      <section class="shop-boutiques">
+        <div class="container">
+          <div class="row" >
+            <div class="col-md-6 col-sm-12 produce-box">
+              <p class="title-box"><label>BOUTIQUE SPOTLIGHT</label></p>
+              <div class='info-box'>
+                  <h4>LUXYRY BY FRMOLY ITALY</h4>
+                  <p>Italy | 46 followers</p>
+                  <a href='#'>View Boutique</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 product-box">
+              <div class="col-md-4 col-sm-4 col-xs-4 item">
+                  <div class="thumb">
+                    <img src="images/shop_boutiques/shop_1.jpg" alt="shop">
+                  </div>
+                  <div class="info">
+                      <p class="pro-status"></p>
+                      <p class="pro-name text-bold">ACNE STUDIOS</p>
+                      <div class="pro-type">black slippers black slippers black slippers</div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 item">
+                  <div class="thumb">
+                    <img src="images/shop_boutiques/shop_2.jpg" alt="shop">
+                  </div>
+                  <div class="info">
+                      <p class="pro-status">Pre-Owned</p>
+                      <p class="pro-name text-bold">ACNE STUDIOS</p>
+                      <div class="pro-type">black slippers</div>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 item">
+                  <div class="thumb">
+                    <img src="images/shop_boutiques/shop_3.jpg" alt="shop">
+                  </div>
+                  <div class="info">
+                      <p class="pro-status">Pre-Owned</p>
+                      <p class="pro-name text-bold">ACNE STUDIOS</p>
+                      <div class="pro-type">black slippers</div>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming-events">
+          <div class="container">
+            <h2 class="text-medium header-section-border">UPCOMING EVENTS</h2>
+            <div class="item-list upcoming-events-list">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                  <div class="wrap-item">
+                    <div class="thumb pull-left">
+                      <img src="images/upcoming_event/img1.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">
+                      <div class="thumb pull-left">
+                          <img src="images/upcoming_event/img2.jpg" alt="brand-focus">
+                      </div>
+                      <div class="info pull-left">
+                          <p class="title">CHAUMET_SS16</p>
+                          <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">
+                    <div class="thumb pull-left">
+                        <img src="images/upcoming_event/img3.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                      <img src="images/upcoming_event/img4.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                        <img src="images/upcoming_event/img5.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                        <img src="images/upcoming_event/img6.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                      <img src="images/upcoming_event/img7.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                        <img src="images/upcoming_event/img8.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 padding-none item">
+                    <div class="wrap-item">  
+                  <div class="thumb pull-left">
+                        <img src="images/upcoming_event/img9.jpg" alt="brand-focus">
+                    </div>
+                    <div class="info pull-left">
+                        <p class="title">CHAUMET_SS16</p>
+                        <p class="time"><span class="text-bold">Starts:</span> 2016 - 03 - 30, 10 : 00 : 00</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <footer>
+        <div class="footer-menu">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6 box-info-site">
+                <ul class="list-unstyled info-site">
+                    <li>
+                      <a>FAQs</a>
+                    </li>
+                    <li>
+                      <a>About Us</a>
+                    </li>
+                    <li>
+                      <a>Career</a>
+                    </li>
+                    <li>
+                      <a>Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a>Privacy Policy</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-md-6 col-sm-5 col-xs-6 box-laguage-social">
+                <div class="language dropdown">
+                  <div class="dropdown-toggle" id="language_dropdown" data-toggle="dropdown">
+                      <div class='lauguage-select'>
+                        <span class='icon-global'></span>
+                        <span class="text">English</span>
+                        <span class='icon-arrow-down'></span>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled dropdown-menu" role="menu" aria-labelledby="language_dropdown">
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">English</a>
+                      </li>
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">Vietnamese</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="social">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#facebook">
+                        <span class="icon-facebook-square" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#instagram">
+                        <span class="icon-instagram" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#twitter">
+                        <span class="icon-twitter-square" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#pinterest">
+                        <span class="icon-pinterest-square" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 box-signup">
+                <div class='title text-bold'>STAY IN TOUCH</div>
+                <button type="button" class="btn btn-stay-in-touch">
+                  Sign up for REEBONZ newsletters
+                  <span class="icon-arrow-right"></span>
+                </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+              <div class='row'>
+                <div class='col-md-2 col-sm-3 col-xs-12 mail'>
+                  <p>concierge@reebonz.com</p> 
+                </div>
+                <div class='col-md-10 col-sm-9 col-xs-12 phone'>
+                  <p>1800-reebonz (1800-7332669)</p> 
+                </div>
+                <p class="copyright">© 2016 Reebonz pte. ltd.</p>
+              </div>
+            </div>
+        </div>
+      </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    
+    <!-- build:js scripts/vendor.js -->	
+      <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+    <!-- endbuild -->	
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
