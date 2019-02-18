@@ -216,6 +216,9 @@ header{
 @media only screen and (max-width: 767px) {
     header{
         &.header{
+            .toggle-open{
+                z-index: 999;
+            }
             .sale-off-notice{
                 // padding: 1px 15px;
                 padding-right: 20px;
