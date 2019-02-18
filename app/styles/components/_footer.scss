@@ -9,7 +9,7 @@ footer{
             .info-site{
                 font-size: $font_size_10;
                 li{
-                    padding: 5px;
+                    padding: 5px 0;
                     a{
                         color: $color_black;
                     }
@@ -99,17 +99,6 @@ footer{
             }
             .box-signup{
                 padding: 0 15px;
-            }
-        }
-        .footer-copyright{
-            .mail{
-                
-            }
-            .phone{
-                
-            }
-            .copyright{
-                
             }
         }
     }

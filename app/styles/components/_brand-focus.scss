@@ -1,10 +1,17 @@
 .brand-focus{
     .item-list{
         &.brand-list{
+            .row:nth-child(1n+0){
+                
+            }
             padding: 0 15px;
             .item{
                 padding: 0;
                 border: 1px solid $color_gray;
+                border-right: none;
+                &:last-of-type{
+                    border-right: 1px solid $color_gray; 
+                }
                 .thumb{
                     width: 90px;
                     height: 100px;
@@ -27,6 +34,24 @@
                     justify-content: center;
                     p{
                         margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and ( max-width : 767px) {
+    .brand-focus{
+        .item-list{
+            &.brand-list{
+                
+                .item{
+                    padding: 0;
+                    border: 1px solid $color_gray;
+                    border-right: 1px solid $color_gray;
+                    border-bottom: none;
+                    &:last-of-type{
+                        border-bottom: 1px solid $color_gray; 
                     }
                 }
             }
