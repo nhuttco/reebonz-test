@@ -359,12 +359,14 @@ header{
                                 display: block;
                                 float: none;
                                 padding: 0 !important;
+                                margin: 0;
                                 a{
                                     padding: 10px !important;
                                     border-radius: 0;
                                     font-weight: 300 !important;
                                 }
-                                &.active{
+                                &.active,
+                                &:hover{
                                     a{
                                         border: none !important;
                                         background: $color_black !important;
