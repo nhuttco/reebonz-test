@@ -6,7 +6,7 @@ $icon-path: '../fonts/icon';
 @import './components/component';
 
 body{
-  font-family: "Lato";
+  font-family: $font-regular;
   section{
     .header-section{
       margin-top: 30px;

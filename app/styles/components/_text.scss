@@ -4,9 +4,15 @@
 .text-bold {
     font-family: $font-bold !important;
 }
+.text-semibold {
+    font-family: $font-semiBold !important;
+}
+.text-medium {
+    font-family: $font-medium !important;
+}
 .label-red{
     background: $color_red;
     color: $color_white;
     @include border-radius(4px);
-    padding: 2px;
+    padding: 3px 5px;
 }
